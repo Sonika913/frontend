@@ -8,14 +8,11 @@ body{
     background-color:gainsboro;
     text-align: left;
     font-size: 20PX;
+    padding: 10px;
+    display: flex;
+
 }
      
-.navbar a{
-
-    font-size: 40px;
-    padding-right: 2%; 
-    text-align: none;
-}
 .navbar a:hover{
     color: rgb(13, 77, 216);
 
@@ -98,3 +95,16 @@ p{
 .intro{
     text-align: center;
 }
+
+.navbar a{
+    display: flex;
+    font-size: 40px;
+    padding-right: 2%; 
+    text-align: none; 
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar ul{
+    list-style:none;
+}  

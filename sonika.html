@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My first JavaScript</h2>
+    <button type="button" onclick="viewDate()">Hello</button>
+    <p id="demo"></p>
+
+    <button ondblclick="changeTextt()">Click Me</button>
+    <p id="demo1">Hello</p>
+
+    <script>
+        const user = "Sonika";
+        function changeTextt(){
+            document.getElementById("demo1").innerHTML = "YOU CLICKED  ME!";
+        }
+        function changeTextt(){
+            document.getElementById("demo1").innerHTML = "YOU DOUBLE-CLICKED ME ";
+        }
+        function viewDate(){
+            document.getElementById("demo").innerHTML = 
+            "HYY " + user + ", TODAY IS " + Date();
+        }
+    </script>
+</body>
+</html>

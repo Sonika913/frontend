@@ -4,15 +4,7 @@ body{
     background-color:cadetblue;
 
 }
-.navbar{
-    background-color:gainsboro;
-    text-align: left;
-    font-size: 20PX;
-    padding: 10px;
-    display: flex;
 
-}
-     
 .navbar a:hover{
     color: rgb(13, 77, 216);
 
@@ -83,6 +75,7 @@ p{
 .card img{
     width: 100%;
     height: 180px;
+    justify-content: center;
 }
 .about{
     padding: 50px;
@@ -106,6 +99,15 @@ p{
     font-size: 20px;
     
 }
+.navbar{
+    background-color:gainsboro;
+    text-align: left;
+    font-size: 20PX;
+    padding: 10px;
+    display: flex;
+
+}
+ 
 .navbar a:hover::after{
     width: 100%;
 } 
@@ -113,7 +115,7 @@ p{
     list-style:none;
     display: inline-block;
     padding: 10px;
-    font-size: 20px;
+    font-size: 20px; 
 } 
 .hamburgur{
     flex-direction: column;
@@ -125,7 +127,7 @@ p{
     width: 25px;
     background-color: black;
 }
-@media(max-width:805px){
+@media(max-width:706px){
     .hamburgur{
         display: flex;
     }
@@ -138,4 +140,9 @@ p{
         right: 15px;
         
     }
+}
+.card img:hover{
+    width: 280px;
+    cursor: pointer;
+    border-radius: 100%;
 }

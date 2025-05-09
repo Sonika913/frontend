@@ -2,35 +2,41 @@ body{
     padding: 0;
     margin: 0;
     background-color:cadetblue;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar a:hover{ 
-    color: black;
-
-} 
 h1{
     text-align: center;
-    
+    font-family: monospace;
 }
+
 .home{
     display: flex;
     font-size: 30px;
     padding-left: 30px;
 }
-img{
+
+ img{
     padding-top: 35px ;
+    width: 200px;
+   height: 180px;  
 }
+
+
 .navbar-right{
     text-align: right;
     float: right;
 }
+
 .about p{
     font-size: 15px;
-}
+   
+} 
+
 .content{
     padding: 15px;
 }
+
 .form{ 
     font-size: 100%;
     text-align: center;
@@ -42,6 +48,7 @@ img{
     color: coral; 
 
 } 
+
 .footer{
     text-align: center;
     gap: 12px;
@@ -50,33 +57,26 @@ img{
     padding: 10px;
     margin:30px;
 }  
+
 .msg{
     background-color: coral;
 }
+
 .footer a{
     text-decoration: none;
 }
-.layout{
+
+.project-layout{
     display: flex; 
     padding: 12%;
     gap: 20px; 
     justify-content: center;
     margin: 12px; 
-
-} 
+}  
 p{
     color: aliceblue;  
 } 
-.card{
-    width: 280px;
-    object-fit: cover;
-    border: 4px;
-}
-.card img{
-    width: 100%;
-    height: 180px;
-    justify-content: center;
-}
+
 .about{
     padding: 50px;
 
@@ -85,55 +85,33 @@ p{
     border-radius: 25px;
     margin-left: 15px;
     padding: 10px;
-}
-.intro{
-    text-align: center;
+    width: 350px;
+    height: 300px;
 }
 
-.navbar a{
-    display: flex;
-    font-size: 40px;
-    padding-right: 2%; 
-    text-align: none; 
-    text-decoration: none; 
-    font-size: 20px;
-    
-}
-.navbar{
-    background-color:gainsboro;
-    text-align: left;
-    font-size: 20PX;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
- 
-.navbar a:hover::after{
-    width: 100%;
+.intro{ 
+    text-align: center;
 } 
-.navbar ul li{
-    list-style:none;
-    display: inline-block;
-    padding: 10px;
-    font-size: 20px; 
-} 
+
 .hamburgur{
     flex-direction: column;
     gap: 5px;
     display: none;
     cursor: pointer;
 }
+
 .hamburgur span{
     height: 3px;
     width: 25px;
     background-color: black;
     border-radius: 2px;
 }
+
 @media(max-width:646px){
     .hamburgur{
         display: flex;
     }
+
     .navbar ul{
         display: none;
         flex-direction: column;
@@ -146,20 +124,81 @@ p{
         
     }
      .nav-links.active{
-
+        display: flex;
      }
       
 }
+.project-layout{
+    width: 280px;
+    object-fit: cover;
+    border: 4px;
+    gap: 20px;
+    display: flex;
+    cursor: pointer; 
+}     
 .logo {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+    color: white;
   }
+
+  .navbar{
+    background-color:darkgray;
+    text-align: left;
+    font-size: 20PX;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar a{
+    display: flex;
+    font-size: 40px;
+    padding-right: 2%; 
+    text-align: none; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px; 
+} 
+
   .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
   }
 
+  .nav-links li a{
+    text-decoration: none; 
+    transition: width 0.3s ease;
+    margin-top: 5px;
+    color: antiquewhite;
+  }
+
+  .navbar a:hover::after{
+    width: 100%;
+  }
+
+.navbar a::after{
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(225, 178, 34);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover{ 
+    color:aqua;
+
+} 
 
   .card img:hover{
     width: 280px;

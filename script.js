@@ -5,7 +5,7 @@ hamburger.addEventListener('click',()=>{
     navlinks.classList.toggle('active');
 });
 
-const text = "Hi, I'm miss. S";
+const text = "Hi, I'm Miss. S|";
 const hii = document.getElementById('hii');
 let index = 0;
 
@@ -17,3 +17,34 @@ function type() {
     }
 }
 type();
+
+const projects = [
+    {
+     image: "image/flower.jpg",
+     title: "Animated Navbar",
+     description: "A responsive navigation bar with smooth animations and toogle functionality. ",
+    },
+    {
+     image: "image/fl.jpg ",
+     title: "Landing Page ",
+     description: "A clean and simple landing page using HTML, CSS and basic JS.",
+    },
+    {
+     image: "image/pexels-aliye-2151376458-31673403.jpg",
+     title: "CSS",
+     description: "CSS describes how HTML elements are to be displayed on screen, paper, or in other media CSS saves a lot of work.",
+    },
+];
+
+const container = document.getElementById("project-container");
+   
+    projects.forEach(project => {
+        const card = document.createElement("div");
+        card.classNAme = "card";
+        card.innerHTML = `
+          <img src="${project.image}" alt="${project.title}" \>
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+        `;
+        container.appendChild(card);
+    });

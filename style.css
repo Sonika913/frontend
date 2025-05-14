@@ -204,3 +204,30 @@ p{
     width: 280px;
     border-radius: 100%;
 }
+
+.veiw{ 
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    gap: 10px;
+    display: flex;
+    border-radius: 10%;
+}
+.border1{
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+.border2{
+     border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+.border3{
+     border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    background-color: antiquewhite;
+}

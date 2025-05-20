@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color:cadetblue;
+    background-color: lightyellow;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -73,8 +73,13 @@ h1{
     justify-content: center;
     margin: 12px; 
 }  
+
+.footer p{
+    color: antiquewhite;
+}
+
 p{
-    color: aliceblue;  
+    color: black;  
 } 
 
 .about{
@@ -87,6 +92,7 @@ p{
     padding: 10px;
     width: 350px;
     height: 300px;
+    text-align: right;
 }
 
 .intro{ 
@@ -134,7 +140,7 @@ p{
     border: 4px;
     gap: 20px;
     display: flex;
-    cursor: pointer; 
+    cursor: pointer;  
 }     
 .logo {
     font-size: 18px;
@@ -205,28 +211,32 @@ p{
     border-radius: 100%;
 }
 
-.veiw{ 
+.view{
     justify-content: center;
     margin: auto;
     padding: auto;
-    gap: 10px; 
-    border-radius: 10%;
+    gap: 10px;
+    display: flex;
+    border-radius: 8px;
 }
+
 .border1{
-    border: 2px solid black;
+    border:2px solid black ;
     padding: 10px;
     width: 200px;
     background-color: antiquewhite;
 }
+
 .border2{
-     border: 2px solid black;
-    padding: 10px;
+    border: 2px solid black;
+     padding: 10px;
     width: 200px;
     background-color: antiquewhite;
 }
+
 .border3{
-     border: 2px solid black;
-    padding: 10px;
+    border: 2px solid  black;
+     padding: 10px;
     width: 200px;
     background-color: antiquewhite;
 }
